@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${plexMono.variable} antialiased`}
       >
         <NextThemesProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           {children}
