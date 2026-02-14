@@ -3,8 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <Accordion type="single" collapsible>
-      Hello World
-    </Accordion>
+    <div className="p-8 bg-red-500 text-white text-2xl">Tailwind works</div>
+
   );
 }
