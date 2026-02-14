@@ -14,13 +14,14 @@ export const UnauthenticatedView = () => {
                     <ItemDescription>You must be signed in to view this content.</ItemDescription>
                 </ItemContent>
                 <ItemActions>
+                    <div className="flex flex-col space-y-4">
                     <SignInButton>
                         <Button variant = "outline">Sign In</Button>
                     </SignInButton>
-                    <SignUpButton>
+                    {/* <SignUpButton>
                         <Button variant = "outline">Sign Up</Button>
-                    </SignUpButton>
-
+                    </SignUpButton> */}
+                    </div>
                 </ItemActions>
             </Item>
         </div>
