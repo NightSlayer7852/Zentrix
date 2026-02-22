@@ -11,6 +11,7 @@ import { dark } from "@clerk/themes";
 import { Button } from './ui/button'
 import { UnauthenticatedView } from '@/features/auth/components/unauthenticated-view'
 import { AuthLoadingView } from '@/features/auth/components/auth-loading-view'
+import { TooltipProvider } from "../components/ui/tooltip"
 
 if (!process.env.NEXT_PUBLIC_CONVEX_URL) {
     throw new Error('Missing NEXT_PUBLIC_CONVEX_URL in your .env file')
@@ -21,6 +22,7 @@ const convex = new ConvexReactClient(process.env.NEXT_PUBLIC_CONVEX_URL)
 export default function Providers({ children }: { children: ReactNode }) {
     return (
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange >
+            <TooltipProvider>
             <ClerkProvider
                 appearance={{
                     theme: dark,
@@ -41,6 +43,7 @@ export default function Providers({ children }: { children: ReactNode }) {
                 </ConvexProviderWithClerk>
 
             </ClerkProvider>
+            </TooltipProvider>
         </ThemeProvider>
     )
 }
