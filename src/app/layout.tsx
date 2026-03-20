@@ -36,7 +36,6 @@ export default function RootLayout({
         className={`${inter.variable} ${plexMono.variable} antialiased`}
       >
         <Providers>
-          
           {children}
         </Providers>
       </body>

@@ -54,7 +54,7 @@ export const Navbar = ({ projectId }: { projectId: Id<"projects"> }) => {
                                 <Button variant="ghost" className="w-fit! p-1.5! h-7!">
                                     <Link href="/" className="flex items-center gap-1.5 group/logo">
                                         <Image
-                                            src="/favicon.ico"
+                                            src="/logo.svg"
                                             alt="Zentrix Logo"
                                             width={20}
                                             height={20}
